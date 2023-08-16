@@ -1,23 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import streamlit as st
-
-
-# In[2]:
-
-
 def BMI(berat_badan, tinggi_badan):
     BMI = berat_badan / ((tinggi_badan / 100) ** 2)
     rounded_BMI = round(BMI, 2)
     return float(rounded_BMI)
-
-
-# In[6]:
-
 
 underweight = 'Kamu Kurus dan underweight, perbanyak protein dan mulai rutin makan (porsi kecil tapi sering)'
 normal = 'Kamu Normal dan Berat badanmu Ideal, jaga pola hidup sehat dan pertahankan ini'
@@ -35,11 +23,7 @@ def conditional_BMI(BMI):
         return obesitas
     else:
         return obes_extreme
-
-
-# In[5]:
-
-
+        
 def main():
     # buat header
     st.title("BMI Calculator Sederhana")
@@ -63,10 +47,4 @@ def main():
         
 if __name__ == "__main__":
     main()
-
-
-# In[ ]:
-
-
-
 
